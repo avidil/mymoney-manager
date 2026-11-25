@@ -1,0 +1,145 @@
+
+{% extends "base.html" %}
+
+{% block title %}Dashboard | MyMoney Manager{% endblock %}
+
+{% block content %}
+
+<div class="app-layout">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-icon">M</span>
+            <span>MyMoney</span>
+        </div>
+
+        <p class="nav-label">MAIN MENU</p>
+
+        <a href="#" class="nav-item active">▦ Dashboard</a>
+        <a href="#" class="nav-item">↔ Transactions</a>
+        <a href="#" class="nav-item">▣ My Accounts</a>
+        <a href="#" class="nav-item">♙ Parents' Fund</a>
+        <a href="#" class="nav-item">⇄ Transfers</a>
+
+        <p class="nav-label">FINANCIAL MANAGEMENT</p>
+
+        <a href="#" class="nav-item">♧ Money Lending</a>
+        <a href="#" class="nav-item">♧ Money Borrowing</a>
+        <a href="#" class="nav-item">◎ Budgets</a>
+        <a href="#" class="nav-item">☆ Savings Goals</a>
+        <a href="#" class="nav-item">▤ Reports</a>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Your personal financial overview</p>
+            </div>
+
+            <div class="currency-label">LKR · Sri Lankan Rupees</div>
+        </header>
+
+        <section class="welcome">
+            <div>
+                <h2>Welcome to MyMoney Manager 👋</h2>
+                <p>Keep track of your money. Make better decisions.</p>
+            </div>
+            <span class="demo-label">DEMO DATA</span>
+        </section>
+
+        <section class="summary-grid">
+
+            <div class="summary-card">
+                <p>Total Assets</p>
+                <h2>Rs. 0.00</h2>
+                <span>Across all accounts</span>
+            </div>
+
+            <div class="summary-card">
+                <p>My Personal Money</p>
+                <h2>Rs. 0.00</h2>
+                <span>Your own funds</span>
+            </div>
+
+            <div class="summary-card">
+                <p>Parents' Fund</p>
+                <h2>Rs. 0.00</h2>
+                <span>Remaining balance</span>
+            </div>
+
+            <div class="summary-card">
+                <p>Net Worth</p>
+                <h2>Rs. 0.00</h2>
+                <span>Assets minus liabilities</span>
+            </div>
+
+        </section>
+
+        <section class="section-heading">
+            <h2>My Accounts</h2>
+            <a href="#">View all</a>
+        </section>
+
+        <section class="accounts-grid">
+
+            <div class="account-card">
+                <span>👛</span>
+                <p>Wallet</p>
+                <h3>Rs. 0.00</h3>
+            </div>
+
+            <div class="account-card">
+                <span>🏦</span>
+                <p>Bank Account</p>
+                <h3>Rs. 0.00</h3>
+            </div>
+
+            <div class="account-card">
+                <span>📈</span>
+                <p>Money Market</p>
+                <h3>Rs. 0.00</h3>
+            </div>
+
+            <div class="account-card">
+                <span>🛡️</span>
+                <p>Emergency Fund</p>
+                <h3>Rs. 0.00</h3>
+            </div>
+
+            <div class="account-card">
+                <span>🚕</span>
+                <p>Uber Account</p>
+                <h3>Rs. 0.00</h3>
+            </div>
+
+        </section>
+
+        <section class="section-heading">
+            <h2>Income & Expenses</h2>
+            <span>This Month</span>
+        </section>
+
+        <section class="summary-grid two-columns">
+
+            <div class="summary-card">
+                <p>Total Income</p>
+                <h2 class="positive">Rs. 0.00</h2>
+            </div>
+
+            <div class="summary-card">
+                <p>Total Expenses</p>
+                <h2 class="negative">Rs. 0.00</h2>
+            </div>
+
+        </section>
+
+        <footer>
+            MyMoney Manager © 2026 | Personal Finance Management
+        </footer>
+
+    </main>
+</div>
+
+{% endblock %}

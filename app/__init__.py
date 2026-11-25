@@ -1,16 +1,12 @@
 
-from flask import Flask
+from flask import Flask, render_template
 
 
 def create_app():
     app = Flask(__name__)
 
     @app.route("/")
-    def home():
-        return {
-            "application": "MyMoney Manager",
-            "message": "Welcome to MyMoney Manager!",
-            "status": "running"
-        }
+    def dashboard():
+        return render_template("dashboard.html")
 
     return app
