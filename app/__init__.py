@@ -2,7 +2,15 @@
 from flask import Flask
 from config import Config
 from app.extensions import db, migrate
+from app import models
 from flask import render_template
+
+
+from app.models.account import Account
+from app.models.category import Category
+from app.models.transaction import Transaction
+from app.models.transaction_allocation import TransactionAllocation
+
 
 
 def create_app():
